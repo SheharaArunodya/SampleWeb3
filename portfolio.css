@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-image: linear-gradient(to right,rgb(225, 255, 0),rgb(255, 179, 0));
+    padding-left: 30%;
+    padding-top: 20px;
+    padding-bottom: 20%;
+    margin-top: 0px;
+}
+.head1{
+    display:inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30,end),blink .60s step-end infinite;
+    white-space : nowrap;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+@keyframes typing{
+    from{
+        width:0%
+    }
+    to{
+        width:100%
+    }
+}
+
+@keyframes blink{
+    from,to{
+        border-color: transparent
+    }
+    50%{
+        border-color: orange;
+    }
+}
+.head1:hover{
+    transform: translateY(-20%);
+    translate: 2s;
+}
+.nav-bar{
+    background-image: linear-gradient(to right,rgb(225, 255, 0),rgb(255, 179, 0));
+    margin-bottom:0% ;
+    padding:0
+}
+.navitem{
+    overflow: hidden;
+    float:right;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+}
+.navitem a{
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+.navitem a:hover{
+    background-color: black;
+    color:white;
+}
+.navitem a:active{
+    background-color:aqua;
+    color:black;
+}
